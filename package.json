@@ -1,0 +1,27 @@
+{
+  "name": "modilib",
+  "version": "0.1.0",
+  "description": "Library Management System",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "crypto": "^1.0.1",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "mongodb": "^3.6.9",
+    "monk": "^7.3.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "modiaditya14",
+  "license": "ISC",
+  "engines": {
+    "node": "14.16.1"
+  }
+}

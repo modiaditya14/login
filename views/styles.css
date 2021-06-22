@@ -1,0 +1,37 @@
+body {
+  margin: auto;
+  width: fit-content;
+  height: max-content;
+}
+input {
+  border-radius: 100px;
+}
+.success {
+  background-color: hsl(203, 100%, 50%);
+  padding: 0.5em;
+  margin: 0.5em 0;
+  border-radius: 1000px;
+}
+hr {
+  background-color: #000;
+  height: 1px;
+}
+.other {
+  background-color: hsl(69, 100%, 50%);
+  padding: 0.3em;
+  margin: 0.1em 0;
+  border-radius: 20px;
+}
+.options {
+  width: fit-content;
+  margin: 1em;
+  padding: 1em;
+  float: right;
+  border: black 1px solid;
+}
+.author {
+  padding-left: 0.4em;
+}
+.info {
+  padding-left: 3em;
+}

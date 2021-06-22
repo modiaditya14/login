@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <h1>Register</h1>
+    <form action="./register.html" method="post">
+      <label for="username">Username</label><br />
+      <input
+        type="text"
+        name="username"
+        id="username"
+        autocomplete="username"
+      /><br />
+      <br />
+      <label for="Password">Password</label><br />
+      <input
+        type="password"
+        name="password"
+        id="password"
+        autocomplete="new-password"
+      /><br /><br />
+      <label for="repass">Confirm Password</label><br />
+      <input
+        type="password"
+        name="repass"
+        id="repass"
+        autocomplete="new-password"
+      /><br />
+      <br />
+      <div style="color: red"><%= message %></div>
+      <button type="submit" class="success">Register</button>
+    </form>
+    <hr />
+    <form action="/login.html" method="GET">
+      <button type="submit" class="other">Login</button>
+    </form>
+  </body>
+</html>

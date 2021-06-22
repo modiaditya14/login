@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ModiLib</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <% if(typeof user != "undefined") {%>
+    <h1>Welcome to ModiLib,ADMIN <%= user.username %></h1>
+    <% } %>
+    <div class="options" id="add">
+      ADD A BOOK
+      <br /><br />
+      <form action="/new" method="post">
+        <label for="bname">Book Title</label>
+        <input type="text" name="bname" /><br /><br />
+        <label for="bauth">Author:</label>
+        <input type="text" name="bauth" /><br /><br />
+        <button type="submit">ADD</button>
+      </form>
+    </div>
+    <div class="options" id="view">
+      SEARCH OR REMOVE ALL BOOKS <br /><br /><% docs.forEach((book) => {%> <%=
+      book.name %><br />
+      <div class="info">-<%= book.author %></div>
+      <br />
+      <div class="choices"></div>
+      <br /><br />
+      <%})%>
+    </div>
+  </body>
+</html>
